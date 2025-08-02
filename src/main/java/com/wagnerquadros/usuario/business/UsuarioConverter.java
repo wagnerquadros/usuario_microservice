@@ -9,7 +9,6 @@ import com.wagnerquadros.usuario.infrastructure.entity.Usuario;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Component
 public class UsuarioConverter {
@@ -35,7 +34,6 @@ public class UsuarioConverter {
                 .complemento(enderecoDTO.getComplemento())
                 .cidade(enderecoDTO.getCidade())
                 .cep(enderecoDTO.getCep())
-                .cidade(enderecoDTO.getCidade())
                 .estado(enderecoDTO.getEstado())
                 .build();
     }
@@ -72,7 +70,6 @@ public class UsuarioConverter {
                 .complemento(endereco.getComplemento())
                 .cidade(endereco.getCidade())
                 .cep(endereco.getCep())
-                .cidade(endereco.getCidade())
                 .estado(endereco.getEstado())
                 .build();
     }
