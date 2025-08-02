@@ -3,6 +3,7 @@ package com.wagnerquadros.usuario.business;
 import com.wagnerquadros.usuario.business.dto.UsuarioDTO;
 import com.wagnerquadros.usuario.infrastructure.entity.Usuario;
 import com.wagnerquadros.usuario.infrastructure.exceptions.ConflictException;
+import com.wagnerquadros.usuario.infrastructure.exceptions.ResourceNotFoundException;
 import com.wagnerquadros.usuario.infrastructure.repository.UsuarioRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -34,5 +35,14 @@ public class UsuarioService {
 
     public boolean verificaEMailExistente(String email){
         return usuarioRepository.existsByEmail(email);
+    }
+
+    public Usuario buscarUsuarioPorEmail(String email){
+        return usuarioRepository.findByEmail(email).orElseThrow(
+                () -> new ResourceNotFoundException("Email não encontrado: " + email));
+    }
+
+    public void deletaUsuarioPorEmail(String email){
+        usuarioRepository.deleteByEmail(email);
     }
 }
