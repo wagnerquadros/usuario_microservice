@@ -1,6 +1,8 @@
 package com.wagnerquadros.usuario.controller;
 
-import com.wagnerquadros.usuario.business.UsuarioService;
+import com.wagnerquadros.usuario.business.dto.EnderecoDTO;
+import com.wagnerquadros.usuario.business.dto.TelefoneDTO;
+import com.wagnerquadros.usuario.business.service.UsuarioService;
 import com.wagnerquadros.usuario.business.dto.UsuarioDTO;
 import com.wagnerquadros.usuario.infrastructure.entity.Usuario;
 import com.wagnerquadros.usuario.infrastructure.security.JwtUtil;
@@ -37,7 +39,7 @@ public class UsuarioController {
     }
 
     @GetMapping
-    private ResponseEntity<Usuario> buscarUsuarioPorEmail (@RequestParam("email") String email){
+    private ResponseEntity<UsuarioDTO> buscarUsuarioPorEmail (@RequestParam("email") String email){
         return ResponseEntity.ok(usuarioService.buscarUsuarioPorEmail(email));
     }
 
@@ -52,4 +54,17 @@ public class UsuarioController {
                                                            @RequestHeader("Authorization") String token){
         return ResponseEntity.ok(usuarioService.atualizaDadosUsuario(token, dto));
     }
+
+    @PutMapping("/endereco")
+    public ResponseEntity<EnderecoDTO> atualizaEndereco(@RequestBody EnderecoDTO enderecoDTO,
+                                                        @RequestParam("id") Long id){
+        return ResponseEntity.ok(usuarioService.atualizaEndereco(id, enderecoDTO));
+    }
+
+    @PutMapping("/telefone")
+    public ResponseEntity<TelefoneDTO> atualizaEndereco(@RequestBody TelefoneDTO telefoneDTO,
+                                                        @RequestParam("id") Long id){
+        return ResponseEntity.ok(usuarioService.atualizaTelefone(id, telefoneDTO));
+    }
+
 }
