@@ -1,0 +1,101 @@
+[33mcommit eb7ac70945dd704bb904e0b63b5d90b78baa2f37[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m)[m
+Merge: 1a206f4 855faae
+Author: Wagner Oliveira de Quadros <106637044+wagnerquadros@users.noreply.github.com>
+Date:   Mon Aug 4 21:04:35 2025 -0300
+
+    Merge pull request #6 from wagnerquadros/feature/atualizacoes
+    
+    Feature/atualizacoes
+
+[33mcommit 855faaea44915e1d4bd5496a30b6cb326f3d5dcd[m[33m ([m[1;31morigin/feature/atualizacoes[m[33m, [m[1;32mfeature/atualizacoes[m[33m)[m
+Author: Wagner Oliveira de Quadros <106637044+wagnerquadros@users.noreply.github.com>
+Date:   Mon Aug 4 20:52:23 2025 -0300
+
+    Adicionado PUT para endereco e telefone
+
+[33mcommit 1f536c9f73f3d4e3884edebcb4b54ffe85955ebe[m
+Author: Wagner Oliveira de Quadros <106637044+wagnerquadros@users.noreply.github.com>
+Date:   Mon Aug 4 11:11:29 2025 -0300
+
+    Inclusão de método PUT de usuário
+
+[33mcommit 1a206f493b2b3224c2eb98c794021ea9d9bde9c5[m
+Merge: b801fbc 03ce712
+Author: Wagner Oliveira de Quadros <106637044+wagnerquadros@users.noreply.github.com>
+Date:   Sat Aug 2 16:52:56 2025 -0300
+
+    Merge pull request #5 from wagnerquadros/feature/requisicoes
+    
+    Adicionados métodos get, delÃete e login
+
+[33mcommit 03ce7127f337e71701f5ceacc68d053fb8e52c51[m[33m ([m[1;31morigin/feature/requisicoes[m[33m, [m[1;32mfeature/requisicoes[m[33m)[m
+Author: Wagner Oliveira de Quadros <106637044+wagnerquadros@users.noreply.github.com>
+Date:   Sat Aug 2 16:50:37 2025 -0300
+
+    Adicionados métodos get, delÃete e login
+
+[33mcommit b801fbc88b79c8197da272cb59e21bcfe0e67e94[m
+Merge: 37e4367 bd1ba05
+Author: Wagner Oliveira de Quadros <106637044+wagnerquadros@users.noreply.github.com>
+Date:   Sat Aug 2 16:12:33 2025 -0300
+
+    Merge pull request #4 from wagnerquadros/feature/salva_usuario
+    
+    Alterações no UsuarioConverter
+
+[33mcommit bd1ba05a2328f3922e7a8149ca4e547df9ee6c46[m[33m ([m[1;31morigin/feature/salva_usuario[m[33m, [m[1;32mfeature/salva_usuario[m[33m)[m
+Author: Wagner Oliveira de Quadros <106637044+wagnerquadros@users.noreply.github.com>
+Date:   Sat Aug 2 16:10:19 2025 -0300
+
+    Alterações no UsuarioConverter
+
+[33mcommit 37e436716d80d12e0a5e75bde5662d0afd7871b7[m
+Merge: 7f186ee 0179c89
+Author: Wagner Oliveira de Quadros <106637044+wagnerquadros@users.noreply.github.com>
+Date:   Sat Aug 2 11:09:12 2025 -0300
+
+    Merge pull request #3 from wagnerquadros/feature/salva_usuario
+    
+    Adicionado método que salva dados de usuário
+
+[33mcommit 0179c89bafa1b852fad61b93017e064a95014234[m
+Author: Wagner Oliveira de Quadros <106637044+wagnerquadros@users.noreply.github.com>
+Date:   Sat Aug 2 10:55:54 2025 -0300
+
+    Adicionado método que salva dados de usuário
+
+[33mcommit 7f186eea03bcbc41a044bb94bdca5aafc66ad711[m
+Merge: 5ba589b d87a2bd
+Author: Wagner Oliveira de Quadros <106637044+wagnerquadros@users.noreply.github.com>
+Date:   Thu Jul 31 20:31:57 2025 -0300
+
+    Merge pull request #2 from wagnerquadros/feature/spring_security
+    
+    Configuração Spring Security, entity e repository
+
+[33mcommit d87a2bd8ffb51de7ca7451b9b127f593d4ba430f[m
+Author: Wagner Oliveira de Quadros <106637044+wagnerquadros@users.noreply.github.com>
+Date:   Thu Jul 31 20:30:52 2025 -0300
+
+    Configuração Spring Security, entity e repository
+
+[33mcommit 5ba589baf2ddac81afe9dd5fbf57a617762ecb67[m
+Merge: 0c37bb1 15a1841
+Author: Wagner Oliveira de Quadros <106637044+wagnerquadros@users.noreply.github.com>
+Date:   Thu Jul 31 19:53:39 2025 -0300
+
+    Merge pull request #1 from wagnerquadros/master
+    
+    Create gradle.yml
+
+[33mcommit 15a1841e8dd0e09671269b844812cdb5d8ea2007[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Wagner Oliveira de Quadros <106637044+wagnerquadros@users.noreply.github.com>
+Date:   Thu Jul 31 19:52:04 2025 -0300
+
+    Create gradle.yml
+
+[33mcommit 0c37bb1d4cb74623216428a564fc996244293753[m
+Author: Wagner Oliveira de Quadros <106637044+wagnerquadros@users.noreply.github.com>
+Date:   Thu Jul 31 19:43:33 2025 -0300
+
+    first commit
