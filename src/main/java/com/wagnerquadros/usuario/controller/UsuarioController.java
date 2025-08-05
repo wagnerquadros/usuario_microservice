@@ -28,7 +28,7 @@ public class UsuarioController {
     }
 
     @PostMapping("/login")
-    private String login(@RequestBody UsuarioDTO usuarioDTO){
+    public String login(@RequestBody UsuarioDTO usuarioDTO){
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         usuarioDTO.getEmail(),
@@ -39,7 +39,7 @@ public class UsuarioController {
     }
 
     @GetMapping
-    private ResponseEntity<UsuarioDTO> buscarUsuarioPorEmail (@RequestParam("email") String email){
+    public ResponseEntity<UsuarioDTO> buscarUsuarioPorEmail (@RequestParam("email") String email){
         return ResponseEntity.ok(usuarioService.buscarUsuarioPorEmail(email));
     }
 
