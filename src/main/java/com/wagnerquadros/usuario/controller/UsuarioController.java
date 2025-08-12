@@ -62,7 +62,7 @@ public class UsuarioController {
     }
 
     @PutMapping("/telefone")
-    public ResponseEntity<TelefoneDTO> atualizaEndereco(@RequestBody TelefoneDTO telefoneDTO,
+    public ResponseEntity<TelefoneDTO> atualizaTelefone(@RequestBody TelefoneDTO telefoneDTO,
                                                         @RequestParam("id") Long id){
         return ResponseEntity.ok(usuarioService.atualizaTelefone(id, telefoneDTO));
     }
@@ -74,7 +74,7 @@ public class UsuarioController {
     }
 
     @PostMapping("/telefone")
-    public ResponseEntity<TelefoneDTO> cadastraEndereco(@RequestBody TelefoneDTO telefoneDTO,
+    public ResponseEntity<TelefoneDTO> cadastraTelefone(@RequestBody TelefoneDTO telefoneDTO,
                                                         @RequestHeader("Authorization") String token){
         return ResponseEntity.ok(usuarioService.cadastraTelefone(token,telefoneDTO));
     }
