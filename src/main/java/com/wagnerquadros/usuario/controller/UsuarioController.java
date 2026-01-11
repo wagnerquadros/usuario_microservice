@@ -4,8 +4,11 @@ import com.wagnerquadros.usuario.business.dto.EnderecoDTO;
 import com.wagnerquadros.usuario.business.dto.TelefoneDTO;
 import com.wagnerquadros.usuario.business.service.UsuarioService;
 import com.wagnerquadros.usuario.business.dto.UsuarioDTO;
+import com.wagnerquadros.usuario.business.service.ViaCepService;
+import com.wagnerquadros.usuario.infrastructure.clients.ViaCepDTO;
 import com.wagnerquadros.usuario.infrastructure.entity.Usuario;
 import com.wagnerquadros.usuario.infrastructure.security.JwtUtil;
+import com.wagnerquadros.usuario.infrastructure.security.SecurityConfig;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -21,6 +24,7 @@ public class UsuarioController {
     private final UsuarioService usuarioService;
     private final AuthenticationManager authenticationManager;
     private final JwtUtil jwtUtil;
+    private final ViaCepService viaCepService;
 
     @PostMapping
     public ResponseEntity<UsuarioDTO> salvarUsuario(@RequestBody UsuarioDTO usuarioDTO){
@@ -77,5 +81,10 @@ public class UsuarioController {
     public ResponseEntity<TelefoneDTO> cadastraTelefone(@RequestBody TelefoneDTO telefoneDTO,
                                                         @RequestHeader("Authorization") String token){
         return ResponseEntity.ok(usuarioService.cadastraTelefone(token,telefoneDTO));
+    }
+
+    @GetMapping("/endereco/{cep}")
+    public ResponseEntity<ViaCepDTO> buscarDadosCep(@PathVariable("cep") String cep) {
+        return ResponseEntity.ok(viaCepService.buscarDadosEndereco(cep));
     }
 }
